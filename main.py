@@ -1,6 +1,5 @@
 import random
-from game import start, total1, total2
-from hit import hit_card
+from game import start, hit_card, total1, total2
 from winloss import winorlose
 
 # deck of cards
@@ -11,13 +10,8 @@ random.shuffle(deck)
 
 player = []
 dealer = []
-# deal
+#deals cards
 start = start(deck, dealer, player)
 choice = input("Do you wish to hit or stand? ").lower()
+hit_card(deck, choice, player)
 
-print(start)
-winorlose(player,dealer)
-hit_card(deck, choice)
-start(player,deck,dealer)
-total1(player)
-total2(dealer)

@@ -1,7 +1,7 @@
 from game import deal
-def hit_card(deck, choice):
+def hit_card(deck, choice, player):
   if choice == "hit":
-   deal()
+   deal(player, deck)
    print()
   else:
-    exit()
+    print("have it your way...")
