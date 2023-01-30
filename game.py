@@ -10,8 +10,8 @@ def start(deck, player, dealer):
     card = random.choice(deck)
     dealer.append(card)
     deck.remove(card)
-  print(player)
-  print(dealer)
+  print("Dealer has: " + str(player))
+  print("You have: " + str(dealer))
 
 def deal(player, deck):
   card = random.choice(deck)
@@ -20,15 +20,17 @@ def deal(player, deck):
   
 # counts up the total for the player
 def total1(player):
-  total = 0 
+  total1 = 0 
   playercount = sum(player)
-  total = total + playercount
-
+  total = total1 + playercount
+  print("player: " + str(total))
+  
 # counts up the total for the dealer
 def total2(dealer):
-  total = 0 
+  total2 = 0 
   dealercount = sum(dealer)
-  total = total + dealercount
+  total = total2 + dealercount
+  print("dealer: " + str(total))
 
 def hit_card(deck, choice, player):
   if choice == "hit":
