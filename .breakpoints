@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "game.py": [
+      {
+        "id": "d1724e51-49a5-412c-b3ca-ff637078d560",
+        "line": 12,
+        "version": 919,
+        "index": 292
+      }
+    ]
+  }
 }

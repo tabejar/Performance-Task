@@ -1,6 +1,6 @@
 import random 
 
-# deals 2 cards to both the player and dealer
+# deals 2 cards to both the player and dealer and prints their hands
 def start(deck, player, dealer):
   for i in range(2):
     card = random.choice(deck)
@@ -13,25 +13,13 @@ def start(deck, player, dealer):
   print("Dealer has: " + str(player))
   print("You have: " + str(dealer))
 
+#code to deal a card to the player if they wish to hit
 def deal(player, deck):
   card = random.choice(deck)
   player.append(card)
   deck.remove(card)
   
-# counts up the total for the player
-def total1(player):
-  total1 = 0 
-  playercount = sum(player)
-  total = total1 + playercount
-  print("player: " + str(total))
-  
-# counts up the total for the dealer
-def total2(dealer):
-  total2 = 0 
-  dealercount = sum(dealer)
-  total = total2 + dealercount
-  print("dealer: " + str(total))
-
+#determines whether the player input was to hit or stand
 def hit_card(deck, choice, player):
   if choice == "hit":
     deal(player, deck)
